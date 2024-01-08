@@ -123,19 +123,14 @@ for (let i = 0; i < arr.length; i++) {
     diff[arr[i]] = k - arr[i];
 }
 
-let difference_list = []
+// let difference_list = []
+// for (let i = 0; i < arr.length; i++) {
+//     difference_list.push(k - arr[i])
+// }
+// console.log(difference_list)
+console.log(diff)
+
 for (let i = 0; i < arr.length; i++) {
-    difference_list.push(k - arr[i])
+    console.log(diff[arr[i]])
 }
-console.log(difference_list)
-
-let freq = {}
-for (let i = 0; i < difference_list.length; i++) {
-    if (freq.hasOwnProperty(difference_list[i])) {
-        freq[difference_list[i]] += 1;
-    } else {
-        freq[difference_list[i]] = 1;
-    }
-}
-console.log(freq)
-
+// console.log(diff[arr[i]])
